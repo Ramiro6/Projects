@@ -15,8 +15,8 @@ module Venezuelasos
         port:587,
         domain:"domain.of.sender.net",
         authentication: "plain",
-        user_name:"ramiroruiz578@gmail.com",
-        password:"",
+        user_name:ENV['gmail'],
+        password:ENV['gmail_password'],
         enable_starttls_auto: true
     }
     # Settings in config/environments/* take precedence over those specified here.

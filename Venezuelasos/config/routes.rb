@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   get '/reset_user', to: 'sessions#reset_user'
+
+
+  # resorces ''
 end
