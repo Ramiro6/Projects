@@ -1,0 +1,17 @@
+<div class="login" align="center">
+  <form action="/users" class="" method="post">
+    <input type="hidden" name="authenticity_token" value="" />
+
+    <label for="">Name</label>
+    <input type="text" name="user[name]" value="" placeholder="Name" class="form-control" /><br>
+
+    <label for="">Email</label>
+    <input type="text" name="user[email]" value="" placeholder="Email" class="form-control" /><br>
+
+    <label for="">Password</label>
+    <input type="password" name="user[password]" value="" placeholder="Password" class="form-control" /> <br>
+
+    <button type="submit" class="btn btn-success btn-block" name="commit" value="save">Submit</button> <br>
+    <%= link_to "Back", "/login"%>
+  </form>
+</div>

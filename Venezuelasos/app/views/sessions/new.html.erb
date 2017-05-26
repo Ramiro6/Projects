@@ -1,0 +1,16 @@
+
+
+<div align="center">
+<h1>New User</h1>
+
+<%= form_for @new_pass do |x| %>
+
+<%= x.label :email, class:"col-sm-2 control-label" %>
+<%= x.text_field :email, class:"form-control col-sm-6", placeholder:"Email"%>
+<%= x.label :password, class:"col-sm-2 control-label" %>
+<%= x.password_field :password, class:"form-control col-sm-6", placeholder:"Password" %>
+<br>
+<%= x.submit "save", class: "btn-admin btn btn-default col-sm-offset-2 col-sm-6" %>
+<% end %>
+<%= link_to "back", "/"%>
+</div>

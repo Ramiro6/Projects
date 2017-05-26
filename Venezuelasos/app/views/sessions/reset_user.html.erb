@@ -1,0 +1,12 @@
+<div align="center">
+<h1>New User</h1>
+
+<%= form_for @user do |x| %>
+
+<%= x.label :email, class:"col-sm-2 control-label" %>
+<%= x.text_field :email, class:"form-control col-sm-6", placeholder:"Email"%>
+<br>
+<%= x.submit "save", class: "btn-admin btn btn-default col-sm-offset-2 col-sm-6" %>
+<% end %>
+<%= link_to "back", "/"%>
+</div>

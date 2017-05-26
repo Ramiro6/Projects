@@ -1,0 +1,21 @@
+<div align="center">
+  <h1>Login</h1>
+  <br>
+  <%= form_tag "/login" do %>
+    <%= label_tag "Email", nil, class:"col-sm-2 control-label"%>
+    <%= text_field_tag :email, nil, class:"form-control col-sm-6", placeholder:"Email"%>
+    <br>
+
+    <%= label_tag "Password", nil, class:"col-sm-2 control-label"%>
+    <%= password_field_tag :password, nil, class:"form-control col-sm-6", placeholder:"Password" %>
+    <br>
+    <%= submit_tag "submit", class: "btn-admin btn btn-default col-sm-offset-2 col-sm-6"%>
+  <% end %>
+
+  <br>
+  <%= link_to "New User", "/new", class:"col-sm-2"%>
+  <br>
+  <%= link_to "Back", "/", class:"col-sm-2"%>
+  <br>
+  <%= link_to "Loses password", "/reset_user", class:"col-sm-2"%>
+</div>
