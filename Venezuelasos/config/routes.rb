@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   get '/reset_user', to: 'sessions#reset_user'
 
 
-  # resorces ''
+  resources 'password_resets'
 end
