@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
     if @new = User.new(new_user)
       @new.save
       UserMailer.welcome_mailer(@new).deliver_now
+      redirect_to "/login"
     end
   end
 

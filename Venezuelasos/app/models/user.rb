@@ -12,8 +12,8 @@ class User < ApplicationRecord
  # Sends password reset email.
  def send_password_reset_email
    generate_token(:reset_digest)
-  #  self.password_resets_sent_at = Time.zone.now
    save!
+  #  self.password_resets_sent_at = Time.zone.now
    UserMailer.password_reset(self).deliver_now
  end
 

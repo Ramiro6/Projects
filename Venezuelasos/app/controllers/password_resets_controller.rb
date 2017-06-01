@@ -20,6 +20,8 @@ class PasswordResetsController < ApplicationController
   end
 
   def update
-
+    @user = User.find_by(params[:email])
+    @user = User.update(params[:password])
+    @user.save
   end
 end
