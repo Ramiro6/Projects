@@ -13,6 +13,9 @@
              #customer='ngModel'
              [(ngModel)]="proposal.customer"
       >
+      <div [hidden]="customer.valid || customer.pristine">
+        Customer name is required
+      </div>
     </div>
   </form>
 </div>
@@ -23,15 +26,107 @@
       <label for="portfolio_url">Portfolio url</label>
       <input type="text"
              id="portfolio_url"
-             placeholder="ABC Company"
              required
              name="portfolio_url"
              #portfolio_url='ngModel'
              [(ngModel)]="proposal.portfolio_url"
       >
+      <div [hidden]="portfolio_url.valid || portfolio_url.pristine">
+        A Portfolio url is required
+      </div>
     </div>
   </form>
 </div>
+
+<div>
+<form #proposalForm="ngForm">
+  <div class="form-group">
+    <label for="tools">Tools that you'll use on the project</label>
+    <input type="text"
+           id="tools"
+           placeholder="ROR, angular"
+           required
+           name="tools"
+           #tools='ngModel'
+           [(ngModel)]="proposal.tools"
+    >
+    <div [hidden]="tools.valid || tools.pristine">
+      A Tools is required
+    </div>
+  </div>
+</form>
+</div>
+
+<div>
+<form #proposalForm="ngForm">
+  <div class="form-group">
+    <label for="estimated_hours">Estimate Hours</label>
+    <input type="number"
+           id="estimated_hours"
+           required
+           name="estimated_hours"
+           #estimated_hours='ngModel'
+           [(ngModel)]="proposal.estimated_hours"
+    >
+    <div [hidden]="estimated_hours.valid || estimated_hours.pristine">
+      You need enter you estimate hours
+    </div>
+  </div>
+</form>
+
+<form #proposalForm="ngForm">
+  <div class="form-group">
+    <label for="hourly_rate">Hourly rate</label>
+    <input type="number"
+           id="hourly_rate"
+           required
+           name="hourly_rate"
+           #hourly_rate='ngModel'
+           [(ngModel)]="proposal.hourly_rate"
+    >
+    <div [hidden]="hourly_rate.valid || hourly_rate.pristine">
+      You need enter you hourly rate
+    </div>
+  </div>
+</form>
+
+
+<form #proposalForm="ngForm">
+  <div class="form-group">
+    <label for="week_to_complete">Week to complete</label>
+    <input type="number"
+           id="week_to_complete"
+           required
+           name="week_to_complete"
+           #week_to_complete='ngModel'
+           [(ngModel)]="proposal.week_to_complete"
+    >
+    <div [hidden]="week_to_complete.valid || week_to_complete.pristine">
+      You need enter you week 
+    </div>
+  </div>
+</form>
+
+
+<form #proposalForm="ngForm">
+  <div class="form-group">
+    <label for="client_email">Client Email <em>(optional)</em></label>
+    <input type="email"
+           id="client_email"
+           name="client_email"
+           #client_email='ngModel'
+           [(ngModel)]="proposal.client_email"
+    >
+  </div>
+</form>
+
+
+</div>
+
+
+
+
+
 
 
 
@@ -47,7 +142,7 @@
 	<p>Ensuring that you are fully informed is one of my top priorities, so in addition to incorporating everything that we discussed, I will also be creating a project management dashboard and sending you a project update message daily so that you can have a transparent view of the development as it takes place.</p>
 
 
-	<p>To accomplish the project and meet the requirements that we discussed, I am estimating that it will take {{ proposal.estimated_hours }} hours in development time to complete. The project should take {{ proposal.weeks_to_complete }} weeks to complete and with my hourly rate of {{ proposal.hourly_rate }}/hour, the estimated total will be {{ proposal.hourly_rate * proposal.estimated_hours }}.</p>
+	<p>To accomplish the project and meet the requirements that we discussed, I am estimating that it will take {{ proposal.estimated_hours }} hours in development time to complete. The project should take {{ proposal.week_to_complete }} weeks to complete and with my hourly rate of {{ proposal.hourly_rate }}/hour, the estimated total will be {{ proposal.hourly_rate * proposal.estimated_hours }}.</p>
 
 
 	<p>The next step from here is to set up a meeting to finalize the project and sign contracts.</p>
