@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { DocumentService } from './documents/document.service';
+
 import { ProposalListComponent } from './proposal-list/proposal-list.component';
 import { ProposalNewComponent } from './proposal-list/proposal-new.component';
 import { ProposalShowComponent } from './proposal-show/proposal-show.component';
@@ -35,7 +37,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpModule,
   ],
-  providers: [],
+  providers: [DocumentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
