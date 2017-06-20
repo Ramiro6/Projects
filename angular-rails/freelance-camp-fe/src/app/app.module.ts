@@ -12,6 +12,7 @@ import { DocumentService } from './documents/document.service';
 import { ProposalListComponent } from './proposal-list/proposal-list.component';
 import { ProposalNewComponent } from './proposal-list/proposal-new.component';
 import { ProposalShowComponent } from './proposal-show/proposal-show.component';
+import { ProposalService } from './proposal-show/proposal.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -37,7 +38,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpModule,
   ],
-  providers: [DocumentService],
+  providers: [DocumentService, ProposalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
