@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class SearchBar extends Component {
+export class SearchBar extends React.Component {
   constructor() {
     super()
   }
 
   render(){
     return(
-
+      <div>
+        <h1>Ramiro Ruiz Larrabure</h1>
+      </div>
     )
   }
 }
-
-
-export default 

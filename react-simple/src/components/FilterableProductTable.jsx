@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {SearchBar} from './SearchBar'
 
-class FilterableProductTable extends Component {
-  constructor(){
+export class FilterableProductTable extends React.Component {
+  constructor() {
     super()
   }
 
   render(){
-    return (
+    return(
       <div>
         <SearchBar />
+        <h1>Joselo</h1>
       </div>
     )
   }
 }
-
-export default 
