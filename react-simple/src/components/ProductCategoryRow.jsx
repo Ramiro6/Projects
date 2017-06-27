@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class SearchBar extends Component {
+export class ProductCategoryRow extends Component {
   constructor() {
     super()
   }
@@ -8,8 +8,7 @@ export class SearchBar extends Component {
   render(){
     return(
       <div>
-        <input type="text"/>
-        <input type="checkbox"/>
+        <h1>AYYYYYYYY</h1>
       </div>
     )
   }

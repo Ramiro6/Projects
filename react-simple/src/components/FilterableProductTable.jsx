@@ -1,7 +1,8 @@
-import React from 'react';
-import {SearchBar} from './SearchBar'
+import React, { Component } from 'react';
+import { SearchBar } from './SearchBar';
+import { ProductTable } from './ProductTable';
 
-export class FilterableProductTable extends React.Component {
+export class FilterableProductTable extends Component {
   constructor() {
     super()
   }
@@ -10,7 +11,7 @@ export class FilterableProductTable extends React.Component {
     return(
       <div>
         <SearchBar />
-        <h1>Joselo</h1>
+        <ProductTable />
       </div>
     )
   }
