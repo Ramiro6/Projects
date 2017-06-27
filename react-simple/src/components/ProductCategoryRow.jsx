@@ -7,9 +7,7 @@ export class ProductCategoryRow extends Component {
 
   render(){
     return(
-      <div>
-        <h1>AYYYYYYYY</h1>
-      </div>
+      <h1> {this.props.category} </h1>
     )
   }
 }

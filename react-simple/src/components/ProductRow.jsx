@@ -7,7 +7,7 @@ export class ProductRow extends Component {
 
   render(){
     return(
-      <h1>Holaaaa</h1>
+      <h5>{this.props.product.name}</h5>
     )
   }
 }

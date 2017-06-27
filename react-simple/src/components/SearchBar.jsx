@@ -9,7 +9,7 @@ export class SearchBar extends Component {
     return(
       <div>
         <input type="text"/>
-        <input type="checkbox"/>
+        <input onChange={this.props.onChange} type="checkbox"/>
       </div>
     )
   }
