@@ -5,11 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.css']
 })
-export class BodyComponent implements OnInit {
+export class BodyComponent {
 
-  constructor() { }
+  mostrar:boolean = false;
 
-  ngOnInit() {
+  frase:any = {
+    mensaje: "Un gran poder require una gran responsabilidad",
+    autor: "Ben Parker"
   }
+
+  personajes:any[] = ["Spiderman", "Venon", "Dr Octopus"];
+
 
 }
