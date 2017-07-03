@@ -6,5 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  nombre = 'Ramiro';
+
+  arreglo = [1,2,3,4,5,6,7,8,9,10]
+
+  PI = Math.PI
+
+  a:number = 0.234;
+
+  salario = 1234.5
+
+  heroe = {
+    nombre: "Logan",
+    clave: "Wolverine",
+    edad: 500,
+    direccion:{
+      calle: "Primera",
+      casa: "19"
+    }
+  }
+
+  valorDePromesa = new Promise( (res,rej)=>{
+    setTimeout(()=>res('llego la data!'), 3500);
+  } )
+
+  fecha = new Date();
+
+  nombre2 = "rAmiro rUiz"
 }
