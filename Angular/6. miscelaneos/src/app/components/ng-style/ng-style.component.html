@@ -1,0 +1,14 @@
+<p [ngStyle]="{'font-size': 'tamano + 15px;'}">Hola mundo esta es una etiqueta</p>
+
+
+<p [style.fontSize.px]="tamano2">Hola mundo esta es una etiqueta</p>
+
+
+<button class="btn btn-primary" (click)="tamano2 = tamano2 + 5">
+  <i class="fa fa-plus"></i>
+</button>
+
+
+<button class="btn btn-primary" (click)="tamano2 = tamano2 - 5">
+  <i class="fa fa-minus"></i>
+</button>
