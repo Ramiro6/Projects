@@ -1,9 +1,23 @@
-<form>
+<form (ngSubmit)="signUp(forma)"
+      #forma="ngForm"
+      novalidate="">
 
-  <input type="text" placeholder="Email">
-  <input type="password" placeholder="Password">
-  <input type="password" placeholder="R password">
+  <input type="text"
+         placeholder="Email"
+         name="email"
+         [(ngModel)]="usuario.email"
+         minlength="3">
 
-  <button type="button" name="button">create user</button>
+  <input type="text"
+         placeholder="Password"
+         name="password"
+         [(ngModel)]="usuario.password">
+
+  <input type="text"
+         placeholder="R password"
+         name="r password"
+         [(ngModel)]="usuario.rpassword">
+
+  <button class="btn btn-outline-primary">create user</button>
 
 </form>
