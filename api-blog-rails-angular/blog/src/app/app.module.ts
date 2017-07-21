@@ -14,6 +14,7 @@ import { CreateuserComponent } from './components/createuser/createuser.componen
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NewuserComponent } from './components/newuser/newuser.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NewuserComponent } from './components/newuser/newuser.component';
     CreateuserComponent,
     HomeComponent,
     NavbarComponent,
-    NewuserComponent
+    NewuserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
